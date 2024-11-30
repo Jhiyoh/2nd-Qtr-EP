@@ -1,0 +1,17 @@
+body {background-image: url(honey.jpg);}
+
+.act {
+    display: flex;
+    align-items: center;
+    font-family: Verdana, sans-serif;
+    font-size: 20px; }
+
+.p {
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.img {
+    float: left;
+}
