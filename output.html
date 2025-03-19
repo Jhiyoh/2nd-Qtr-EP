@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Outputs</title>
+    <script>
+        window.onload = function() {
+    var name = prompt("What's your name?");
+    var color = prompt("What's your favorite color?");
+    if (name && color) {
+        var color = prompt("What's your favorite color?");
+        alert("Welcome, " + name + ", Have fun browsing!");
+    } else { 
+        // If name or birthday is not provided, show the GIF 
+        document.body.innerHTML = "<img src='stare.gif' style='width: 100vw; height: 100vh; '>";
+}
+};
+    </script>
+    </head>
+    <body style="background-color: skyblue;";>
+        <script type="text/javascript">
+            function show_alert()
+            {alert("You clicked the button!");}
+            </script>
+            <script>
+                function show_prompt()
+                {var name=prompt("Please enter your nickname:");
+                if (name!=null && name!="")
+            {document.write("Well hello " +name+ "! nice nickname btw");}
+                }
+
+            </script>
+            <script>
+                
+function show_confirm()
+{var ans=confirm("Do you want to proceed?");
+if (ans==true)
+{alert("Yes");}
+else{alert("Oh no no no");}}
+</script>
+            
+        <h1 style="font-family: Georgia, 'Times New Roman', Times, serif;" align="center"> Outputs</h1> 
+        <br>
+        <hr color="black">
+        <br>
+        <h2 style="font-family: Georgia, 'Times New Roman', Times, serif;" > 
+            Lesson 1 <br>
+            1. Alerts </h2>
+            <h3 style="font-family: Georgia, 'Times New Roman', Times, serif;">Alert Boxes - If you click the button below an alert will show up.</h3>
+            <input type="button" onclick="show_alert()" value="Click Me!"/>
+            <br><br>
+            <h2 style="font-family: Georgia, 'Times New Roman', Times, serif;" > 
+             2. Prompt Box </h2> <h3 style="font-family: Georgia, 'Times New Roman', Times, serif;">Prompt Boxes - If you click the button below a prompt box will show up.</h3>
+             <br>
+             <input type="button" onclick="show_prompt()" value="Click Me!"/>
+             <br><br>
+             <h2 style="font-family: Georgia, 'Times New Roman', Times, serif;" > 
+                3. Confirm Box </h2> <h3 style="font-family: Georgia, 'Times New Roman', Times, serif;">Confrim Boxes - If you click the button below a confirm box will show up.</h3>
+                <br>
+                <input type="button" onclick="show_confirm()" value="Click Me!"/>
+                <hr color="black">
+                <br>
+                <h2 style="font-family: Georgia, 'Times New Roman', Times, serif;" > 
+                    Lesson 2 <br>
+                    1. If Statements </h2>
+                    <p>Display "Good day!" if the hour is less than 18:00:</p>
+
+<p id="time">Good Evening!</p>
+
+<script>
+if (new Date().getHours() < 18) {
+  document.getElementById("demo").innerHTML = "Good day!";
+}
+</script>
+<h2 style="font-family: Georgia, 'Times New Roman', Times, serif;" > 2. If-Else (The variable is equivalent to 60)</h2>
+<br>
+<script>
+var age=60;
+if(age>=60)
+{document. write("Senior");}
+else
+{document.write("Adult");}
+</script>
+<br>
+<hr color="black">
+<h2 style="font-family: Georgia, 'Times New Roman', Times, serif;" > 
+    Lesson 3 <br>
+    1. Switch Statements </h2><br>
+    <input id="yow" type="text">
+
+<button onclick="button()">Submit </button>
+<h2 style="font-family: Georgia, 'Times New Roman', Times, serif;" id="text">
+
+<script>
+    function button() {
+      var text;
+      var foods = document.getElementById("yow").value;
+    
+      switch(foods) {
+        case "Lumpia":
+          text = "uhmmm crunchy my 2nd favorite";
+        break;
+        case "Sisig":
+        text = "im craving sisig rn😋";
+        break;
+        case "Lechon":
+        text = "crunchy";
+        break;
+        case "Adobo":
+        text = "Pork Adebayor the GOAT!!";
+        break;
+        case "Sinigang":
+        text = "My favorite ulam!!!";
+        break;
+        default:
+        text = "ano yan? o wala kang nilagay";
+      }
+      document.getElementById("text").innerHTML = text;
+    }
+    </script>
+<h2 style="font-family: Georgia, 'Times New Roman', Times, serif;" >2. Return Statements <br>(the value of x and y is 50 and 100)</h2>
+<br>
+<script>
+
+    function product(x,y)
+    {return x*y;
+    }
+    </script>
+    <script>
+    document.write("<span'>The product of x and y is </span>");
+    document.write(product(50,100));
+</script>
+</body>
+</html>
+
+
+
+
+
+
+               
+
+
+
+
+
+        
+    </body>
+</html>
